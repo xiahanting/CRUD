@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+
+    <!--<mappers>-->
+
+        <!--&lt;!&ndash;resource映射&ndash;&gt;-->
+        <!--&lt;!&ndash;<mapper resource="com/hxzy/dao/AdminProductMapper.xml"/>&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;class映射，此种方法要求mapper接口名称和mapper映射文件名称相同，且放在同一个目录中。-->
+           <!--此种方法要求mapper接口名称和mapper映射文件名称相同，且放在同一个目录中。&ndash;&gt;-->
+        <!--&lt;!&ndash;<mapper class="mapper.UserMapper"/>&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;包下name 映射-->
+
+         <!--此种方法要求mapper接口名称和mapper映射文件名称相同，-->
+         <!--且放在同一个目录中-->
+        <!--&ndash;&gt;-->
+        <!--&lt;!&ndash;<package name="com.hxzy.dao"/>&ndash;&gt;-->
+
+    <!--</mappers>-->
+
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!--分页参数合理化-->
+            <property name="reasonable" value="true"/>
+
+        </plugin>
+
+    </plugins>
+
+
+
+</configuration>
